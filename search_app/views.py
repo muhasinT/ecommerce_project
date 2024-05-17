@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 from django.db.models import Q
 
-from ecommerce_project.ecommerce_app.models import Product
+from ecommerce_app.models import Product
 
 
 # Create your views here.
