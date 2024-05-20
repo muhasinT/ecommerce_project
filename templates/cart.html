@@ -43,7 +43,7 @@ This is the cart page proceed to review your items and place the order
             {% for cart_item in cart_items %}
             <tr>
                 <td>
-                    <a href="cart_item.product.{{get_url}}"><img src="{{cart_item.product.image.url}}" style="width:100px;height:100px" alt="" class="float-left rounded custom_image">
+                    <a href="{{cart_item.product.get_url}}"><img src="{{cart_item.product.image.url}}" style="width:100px;height:100px" alt="" class="float-left rounded custom_image">
                     </a>
                 </td>
                 <td class="text-left">
@@ -92,7 +92,7 @@ This is the cart page proceed to review your items and place the order
                 </tr>
                 <tr>
                     <td class="text-left">
-                        Your Total is:<strong>{{total}}</strong>
+                        Your Total is:<strong>${{total}}</strong>
                     </td>
                 </tr>
             </tbody>

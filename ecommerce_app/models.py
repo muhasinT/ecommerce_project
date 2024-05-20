@@ -34,7 +34,7 @@ class Product(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     def get_url(self):
-        return reverse('ecommerce_app:product_category_detail',args=[self.category.slug,self.slug])
+        return reverse('ecommerce_app:product_category_detail', args=[self.category.slug, self.slug])
 
     class Meta:
         ordering = ('name',)
